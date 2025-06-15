@@ -12,7 +12,7 @@ void loop() {
   // put your main code here, to run repeatedly:
    // LOW = Stop, HIGH = Go
 
-  int lastBtnState = LOW;
+  static int lastBtnState = LOW;
   int buttonState = digitalRead(pushButtonPin);
 
   int i = 0;
